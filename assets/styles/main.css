@@ -1,0 +1,20 @@
+@import './font.css';
+
+:root{
+  --darkGreen: #012427;
+  --green : #16403e;
+  --grey: #acb1ae;
+  --yellow : #fffef8;
+  --white : #ffffff;
+  --canelaRegular: 'Canela-regular';
+  --canelaRegularItalic: 'Canela-regularItalic';
+  --canelaBold: 'Canela-bold';
+  --canelaLight: 'Canela-light';
+  --canelaMedium: 'Canela-medium';
+  --canelaThin: 'Canela-thin';
+  --GTAmericaExpandedBlack: 'GT-America-expanded-black';
+  --GTAmericaRegular: 'GT-America-regular';
+  --GTAmericaMedium: 'GT-America-medium';
+}
+
+@import './index.css';

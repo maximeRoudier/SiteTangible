@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "Canela-regular";
+	src: url('../fonts/Canela/Canela/Canela-Regular.otf');
+}
+@font-face {
+	font-family: "Canela-regularItalic";
+	src: url('../fonts/Canela/Canela/Canela-RegularItalice.otf');
+}
+@font-face {
+	font-family: "Canela-bold";
+	src: url('../fonts/Canela/Canela/Canela-Bold.otf');
+}
+@font-face {
+	font-family: "Canela-light";
+	src: url('../fonts/Canela/Canela/Canela-Light.otf');
+}
+@font-face {
+	font-family: "Canela-medium";
+	src: url('../fonts/Canela/Canela/Canela-Medium.otf');
+}
+@font-face {
+	font-family: "Canela-thin";
+	src: url('../fonts/Canela/Canela/Canela-Thin.otf');
+}
+@font-face {
+	font-family: "GT-America-expanded-black";
+	src: url('../fonts/GT AMERICA/GT-America-Expanded-Black.OTF');
+}
+@font-face {
+	font-family: "GT-America-regular";
+	src: url('../fonts/GT AMERICA/GT-America-Regular.OTF');
+}
+@font-face {
+	font-family: "GT-America-medium";
+	src: url('../fonts/GT AMERICA/GT-America-Medium.OTF');
+}
