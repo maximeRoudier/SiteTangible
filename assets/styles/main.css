@@ -1,13 +1,11 @@
 @import './font.css';
 
 :root{
-  --darkGreen: #012427;
   --green : #16403e;
   --grey: #acb1ae;
   --yellow : #fffef8;
-  --white : #ffffff;
   --canelaRegular: 'Canela-regular';
-  --canelaRegularItalic: 'Canela-regularItalic';
+  --canelaRegularItalic: 'Canela-RegularItalic';
   --canelaBold: 'Canela-bold';
   --canelaLight: 'Canela-light';
   --canelaMedium: 'Canela-medium';
@@ -17,4 +15,4 @@
   --GTAmericaMedium: 'GT-America-medium';
 }
 
-@import './index.css';
+/* @import 'index2.css'; */

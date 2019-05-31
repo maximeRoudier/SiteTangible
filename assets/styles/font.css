@@ -4,7 +4,7 @@
 }
 @font-face {
 	font-family: "Canela-regularItalic";
-	src: url('../fonts/Canela/Canela/Canela-RegularItalice.otf');
+	src: url('../fonts/Canela/Canela/Canela-RegularItalic.otf');
 }
 @font-face {
 	font-family: "Canela-bold";
@@ -33,4 +33,15 @@
 @font-face {
 	font-family: "GT-America-medium";
 	src: url('../fonts/GT AMERICA/GT-America-Medium.OTF');
+}
+
+.p__body{
+  font-family: var(--GTAmericaRegular);
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.p__title{
+  font-size: 24px;
+  font-family: var(--canelaBold);
 }
