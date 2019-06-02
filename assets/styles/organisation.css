@@ -118,11 +118,6 @@ main{
   color: var(--white);
 }
 
-/* .card-flex {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .horizontal {
   width: 14px;
   height: 3px;
@@ -304,7 +299,7 @@ main{
       z-index: 100;
       transform: translate(-50%, -50%);
       pointer-events: none;
-      mix-blend-mode: exclusion;
+      mix-blend-mode: hard-light;
     }
 
     .cursor__green.cursor__green-shadow {
