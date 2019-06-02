@@ -271,6 +271,25 @@
   .presentation__p{
     margin-bottom: 50px;
   }
+
+  /*FOOTER*/
+  footer{
+    height: 75px;
+    overflow: hidden;
+    margin-top: 0;
+  }
+
+  .link{
+    top: 25px;
+    font-size: 71px;
+    -webkit-text-stroke: 1px var(--green);
+    color: transparent;
+    transition: all 1s ease;
+  }
+
+  footer:hover .link{
+    top: 0px;
+  }
 }
 
 @media screen and (min-width : 1200px) {
@@ -370,26 +389,6 @@
     font-size: 16px;
     margin-top: 20px;
   }
-
-  /*FOOTER*/
-  footer{
-    height: 75px;
-    overflow: hidden;
-    margin-top: 0;
-  }
-
-  .link{
-    top: 25px;
-    font-size: 71px;
-    -webkit-text-stroke: 1px var(--green);
-    color: transparent;
-    transition: all 1s ease;
-  }
-
-  footer:hover .link{
-    top: 0px;
-  }
-
 
   /*CURSOR*/
   * {

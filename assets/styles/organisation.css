@@ -231,18 +231,93 @@ main{
     }
 
     .organisation__card{
-      display: block;
+      display: flex;
+      margin: 155px 0;
     }
 
-    .card__content{
-      display: flex;
+    .card__content:first-child{
+      margin-top: 150px;
+    }
+
+    .cardOne, .cardThree{
+      margin-right: 70px;
+      margin-bottom: 70px;
     }
 
     .card{
       background-color: var(--green);
+      padding: 70px 50px;
+    }
+
+    .card h2 {
+      color: var(--white);
+      font-size: 20px;
+      font-family: var(--GTAmericaBold);
+      display: flex;
+      transition: .6s;
+      max-width: 90%;
+      text-align: left;
+    }
+
+    .card p{
+      font-size: 18px;
+      font-family: var(--GTAmericaRegular);
+      line-height: 35px;
+      color: var(--white);
+      margin-top: 20px;
+    }
+
+    /*FOOTER*/
+    footer{
+      height: 75px;
+      overflow: hidden;
+      margin-top: 0;
+    }
+
+    .link{
+      top: 25px;
+      font-size: 71px;
+      -webkit-text-stroke: 1px var(--green);
+      color: transparent;
+      transition: all 1s ease;
+    }
+
+    footer:hover .link{
+      top: 0px;
     }
 
 
+    /*CURSOR*/
+    * {
+      cursor: none;
+    }
 
+    .cursor__green {
+      display: block;
+      height: 15px;
+      width:  15px;
+      border-radius: 50%;
+      position: fixed;
+      z-index: 100;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
 
+    .cursor__green.cursor__green-shadow {
+    background: var(--green);
+    transition: top .15s, left .15s,
+                width .5s, height .5s,
+                background .15s;
+    transition-timing-function: ease-out;
+    }
+
+    .cursor__green-shadow.active {
+    height: 75px;
+    width: 75px;
+    z-index: 1;
+    }
+
+    @media screen and (min-width : 1200px) {
+
+    }
   }
