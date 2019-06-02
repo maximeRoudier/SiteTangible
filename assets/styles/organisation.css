@@ -84,6 +84,7 @@ main{
   z-index: 1;
   transition: .6s;
   padding: 20px 0;
+  background-color: transparent;
 }
 
 .btn {
@@ -232,7 +233,8 @@ main{
 
     .organisation__card{
       display: flex;
-      margin: 155px 0;
+      /* margin: 155px 0; */
+      margin-bottom: 120px;
     }
 
     .card__content:first-child{
@@ -241,12 +243,13 @@ main{
 
     .cardOne, .cardThree{
       margin-right: 70px;
-      margin-bottom: 70px;
+      margin-bottom: 30px;
     }
 
     .card{
       background-color: var(--green);
       padding: 70px 50px;
+      cursor: none;
     }
 
     .card h2 {
@@ -301,6 +304,7 @@ main{
       z-index: 100;
       transform: translate(-50%, -50%);
       pointer-events: none;
+      mix-blend-mode: exclusion;
     }
 
     .cursor__green.cursor__green-shadow {
@@ -318,6 +322,48 @@ main{
     }
 
     @media screen and (min-width : 1200px) {
+      .top{
+        height: 90vh;
+      }
+
+      .top__title{
+        /* font-size: 35px; */
+        margin-top: 150px;
+        /* line-height: 42px; */
+      }
+
+      main{
+        margin-top: -250px;
+      }
+
+      .hero__image div{
+        height: 500px;
+      }
+
+      /*SECTION TEXT*/
+      .organisation__intro{
+        font-size: 24px;
+        margin-bottom: 70px;
+        line-height: 36px;
+        text-align: left;
+      }
+
+      .organisation__p__all{
+        margin-bottom: 70px;
+      }
+
+      .organisation__p{
+        /* margin-bottom: 40px; */
+        /* padding: 15px 0; */
+        font-size: 16px;
+        line-height: 30px;
+      }
+
+    /*CARD*/
+      .card p{
+        font-size: 16px;
+        line-height: 30px;
+      }
 
     }
   }

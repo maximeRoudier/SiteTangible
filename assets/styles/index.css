@@ -404,6 +404,7 @@
     z-index: 100;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    mix-blend-mode: exclusion;
   }
 
   .cursor__green.cursor__green-shadow {
