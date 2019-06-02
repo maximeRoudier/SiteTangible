@@ -1,7 +1,3 @@
-body{
-  background-color: var(--yellow);
-}
-
 .container-fluid{
   padding:0;
   overflow: hidden;

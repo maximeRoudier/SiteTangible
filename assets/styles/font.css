@@ -35,6 +35,11 @@
 	src: url('../fonts/GT AMERICA/GT-America-Medium.OTF');
 }
 
+@font-face {
+	font-family: "GT-America-bold";
+	src: url('../fonts/GT AMERICA/GT-America-Bold.OTF');
+}
+
 .p__body{
   font-family: var(--GTAmericaRegular);
   font-size: 18px;

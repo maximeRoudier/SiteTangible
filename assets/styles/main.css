@@ -13,6 +13,11 @@
   --GTAmericaExpandedBlack: 'GT-America-expanded-black';
   --GTAmericaRegular: 'GT-America-regular';
   --GTAmericaMedium: 'GT-America-medium';
+  --GTAmericaBold: 'GT-America-bold';
+}
+
+body{
+  background-color: var(--yellow);
 }
 
 /* @import 'index2.css'; */
