@@ -41,7 +41,11 @@
   position: absolute;
   bottom: -1px;
   padding-top: 33px;
-  padding-bottom: 18px;
+  padding-bottom: 33px;
+}
+
+.summary__link:last-child{
+  margin-bottom: 0;
 }
 
  .summary__link{
@@ -51,6 +55,11 @@
   color: var(--green);
   margin-bottom: 15px;
   cursor: pointer;
+}
+
+.summary__link:hover{
+  color: var(--green);
+  text-decoration: none;
 }
 
 .summary__part{
