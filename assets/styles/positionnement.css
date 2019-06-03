@@ -189,7 +189,10 @@ body{
   }
 
   /*FOOTER*/
-  footer{
+
+/* Faire un footer pour la couleur blanche !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+  /* footer{
     height: 75px;
     overflow: hidden;
     margin-top: -1px;
@@ -206,7 +209,7 @@ body{
 
   footer:hover .link{
     top: 0px;
-  }
+  } */
 
   /*CURSOR*/
   * {

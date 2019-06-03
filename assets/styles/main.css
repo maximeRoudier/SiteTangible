@@ -1,4 +1,7 @@
 @import './font.css';
+@import './menu.css';
+@import './overlay.css';
+@import './bottomLink.css';
 
 :root{
   --green : #16403e;
@@ -19,5 +22,11 @@
 body{
   background-color: var(--yellow);
 }
+
+main{
+  overflow-x: hidden;
+  position: relative;
+}
+
 
 /* @import 'index2.css'; */

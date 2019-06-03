@@ -22,14 +22,74 @@
 
     <!-- script  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/linkBottom.js"></script>
+    <script src="assets/js/menuDesappear.js"></script>
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/menuSlide.js"></script>
 
   </head>
   <body>
     <div class="cursor__green cursor__green-shadow"></div>
 
-    <section class='container-fluid'>
+    <main>
+      <!-- Navigation with menu -->
+      <section class="menu__button">
+        <p class="menu__button__open">Menu</p>
+        <p class="menu__button__close">Close</p>
+      </section>
+      <div class="appearOverlay">
+      </div>
+      <section class="menu">
+        <nav class="menu__nav menu__navigation">
+          <ul class="menu__nav__inner">
+            <li>
+              <span>Part. 1</span>
+              <a class="menu__nav__link" data-image="image-background-1" data-text="Introduction" href="./index.html">Introduction</a>
+              <p>Services, clients et concurrence</p>
+            </li>
+            <li>
+              <span>Part. 2</span>
+              <a class="menu__nav__link" data-image="image-background-2" data-text="Organisation" href="./organisation.html">Organisation</a>
+              <p>Business Model et Gestion</p>
+            </li>
+            <li>
+              <span>Part. 3</span>
+              <a class="menu__nav__link" data-image="image-background-3"  data-text="Positionnement" href="./positionnement.html">Positionnement</a>
+              <p>Business Model et Gestion</p>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="menu--mobile">
+        <nav class="menu__nav--mobile menu__navigation">
+          <ul class="menu__nav__inner--mobile">
+            <li>
+              <a class="menu__nav__link--mobile" href="./index.html">Introduction</a>
+              <p>Services, clients et concurrence</p>
+            </li>
+            <li>
+              <a class="menu__nav__link--mobile" href="./organisation.html">Organisation</a>
+              <p>Business Model et Gestion</p>
+            </li>
+            <li>
+              <a class="menu__nav__link--mobile" href="./positionnement.html">Positionnement</a>
+              <p>Business Model et Gestion</p>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div class="menu__background">
+        <div class="menu__background--content">
+          <img class="image-background-1" src="assets/img/image-1.jpg" alt="">
+          <img class="image-background-2" src="assets/img/image-2.jpg" alt="">
+          <img class="image-background-3" src="assets/img/image-3.jpg" alt="">
+        </div>
+      </div>
+
+      <section class="container-fluid">
       <section class="services col-12">
         <p class="services__intro col-10 offset-1 col-lg-7">Team Tangible possède plusieurs facettes par rapport à son offre sur le marché. En effet, une part de ses services peut être considérée comme faisant partie de ceux proposés par une agence web classique.</p>
         <p class="services__p p__body col-10 offset-1 col-lg-5 offset-lg-6">Ils réalisent par exemple le branding (création de l’image de la marque) de leurs clients, mais aussi des applications mobiles et des sites internet fait avec Wordpress avec des fonctionnalités avancées comme l’e-commerce, l’e-learning et les plates formes d’adhésion. L’activité des entreprises souscrivant à ces plugins dépend des revenus générés par leur site web. Ce sont donc des clients faciles pour commencer. De plus, ils sont financièrement intéressant puisqu’ils sont prêts à dépenser plus pour avoir un produit de qualité et procurent un revenu régulier pour Tangible.</p>
@@ -71,9 +131,13 @@
       </section>
 
     </section>
+    </main>
 
+    <!-- Navigation with bottom link -->
     <footer>
-      <a href="index.html" class="link">Relire</a>
+      <div class="bottom__link--content">
+        <a href="index.html"  data-text="Relire" class="bottom__link">Relire</a>
+      </div>
     </footer>
 
   </body>

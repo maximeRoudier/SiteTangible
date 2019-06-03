@@ -9,6 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .landing__overlay{
@@ -171,7 +172,7 @@
 }
 
 /*FOOTER*/
-  footer{
+  /* footer{
     position: relative;
     margin-top: -100px;
   }
@@ -191,7 +192,7 @@
   .link:hover{
     text-decoration: none;
     color: var(--green);
-  }
+  } */
 
   /*CURSOR*/
   .cursor__green{
@@ -282,7 +283,7 @@
   }
 
   /*FOOTER*/
-  footer{
+  /* footer{
     height: 75px;
     overflow: hidden;
     margin-top: 0;
@@ -298,7 +299,7 @@
 
   footer:hover .link{
     top: 0px;
-  }
+  } */
 }
 
 @media screen and (min-width : 1200px) {

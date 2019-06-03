@@ -11,7 +11,6 @@
 
     <!-- styles  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="assets/styles/main.css">
@@ -22,14 +21,74 @@
 
     <!-- script  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/linkBottom.js"></script>
+    <script src="assets/js/menuDesappear.js"></script>
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/menuSlide.js"></script>
 
   </head>
   <body>
     <div class="cursor__green cursor__green-shadow"></div>
 
-    <div class='container-fluid'>
+    <main>
+      <!-- Navigation with menu -->
+      <section class="menu__button">
+        <p class="menu__button__open">Menu</p>
+        <p class="menu__button__close">Close</p>
+      </section>
+      <div class="appearOverlay">
+      </div>
+      <section class="menu">
+        <nav class="menu__nav menu__navigation">
+          <ul class="menu__nav__inner">
+            <li>
+              <span>Part. 1</span>
+              <a class="menu__nav__link" data-image="image-background-1" data-text="Introduction" href="./index.html">Introduction</a>
+              <p>Services, clients et concurrence</p>
+            </li>
+            <li>
+              <span>Part. 2</span>
+              <a class="menu__nav__link" data-image="image-background-2" data-text="Organisation" href="./organisation.html">Organisation</a>
+              <p>Business Model et Gestion</p>
+            </li>
+            <li>
+              <span>Part. 3</span>
+              <a class="menu__nav__link" data-image="image-background-3"  data-text="Positionnement" href="./positionnement.html">Positionnement</a>
+              <p>Business Model et Gestion</p>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="menu--mobile">
+        <nav class="menu__nav--mobile menu__navigation">
+          <ul class="menu__nav__inner--mobile">
+            <li>
+              <a class="menu__nav__link--mobile" href="./index.html">Introduction</a>
+              <p>Services, clients et concurrence</p>
+            </li>
+            <li>
+              <a class="menu__nav__link--mobile" href="./organisation.html">Organisation</a>
+              <p>Business Model et Gestion</p>
+            </li>
+            <li>
+              <a class="menu__nav__link--mobile" href="./positionnement.html">Positionnement</a>
+              <p>Business Model et Gestion</p>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div class="menu__background">
+        <div class="menu__background--content">
+          <img class="image-background-1" src="assets/img/image-1.jpg" alt="">
+          <img class="image-background-2" src="assets/img/image-2.jpg" alt="">
+          <img class="image-background-3" src="assets/img/image-3.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="container-fluid">
       <header class="top">
         <h1 class="top__title col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-5">« L'organisation est d'autant plus importante que le travail se fait à distance »</h1>
       </header>
@@ -154,9 +213,13 @@
       </main>
 
     </div>
+    </main>
 
+    <!-- Navigation with bottom link -->
     <footer>
-      <a href="positionnement.html" class="link">Positionnement</a>
+      <div class="bottom__link--content">
+        <a href="positionnement.html"  data-text="Positionnement" class="bottom__link">Positionnement</a>
+      </div>
     </footer>
 
 
