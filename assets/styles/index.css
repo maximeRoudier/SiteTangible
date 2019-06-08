@@ -171,29 +171,6 @@
   margin-top: 10px;
 }
 
-/*FOOTER*/
-  /* footer{
-    position: relative;
-    margin-top: -100px;
-  }
-
-  .link{
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 50px;
-    font-family: var(--canelaBold);
-    color: var(--green);
-    text-decoration: none;
-    z-index: 1;
-  }
-
-  .link:hover{
-    text-decoration: none;
-    color: var(--green);
-  } */
-
   /*CURSOR*/
   .cursor__green{
     display: none;
@@ -281,25 +258,6 @@
   .presentation__p{
     margin-bottom: 50px;
   }
-
-  /*FOOTER*/
-  /* footer{
-    height: 75px;
-    overflow: hidden;
-    margin-top: 0;
-  }
-
-  .link{
-    top: 25px;
-    font-size: 71px;
-    -webkit-text-stroke: 1px var(--green);
-    color: transparent;
-    transition: all 1s ease;
-  }
-
-  footer:hover .link{
-    top: 0px;
-  } */
 }
 
 @media screen and (min-width : 1200px) {

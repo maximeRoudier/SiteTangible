@@ -156,29 +156,6 @@ main{
   transition: .3s ease;
 }
 
-/*FOOTER*/
-  /* footer{
-    position: relative;
-    margin-top: -100px;
-  }
-
-  .link{
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 45px;
-    font-family: var(--canelaBold);
-    color: var(--green);
-    text-decoration: none;
-    z-index: 1;
-  }
-
-  .link:hover{
-    text-decoration: none;
-    color: var(--green);
-  } */
-
   /*CURSOR*/
   .cursor__green{
     display: none;
@@ -228,7 +205,6 @@ main{
 
     .organisation__card{
       display: flex;
-      /* margin: 155px 0; */
       margin-bottom: 120px;
     }
 
@@ -264,26 +240,6 @@ main{
       color: var(--white);
       margin-top: 20px;
     }
-
-    /*FOOTER*/
-    /* footer{
-      height: 75px;
-      overflow: hidden;
-      margin-top: 0;
-    }
-
-    .link{
-      top: 25px;
-      font-size: 71px;
-      -webkit-text-stroke: 1px var(--green);
-      color: transparent;
-      transition: all 1s ease;
-    }
-
-    footer:hover .link{
-      top: 0px;
-    } */
-
 
     /*CURSOR*/
     * {
@@ -322,9 +278,7 @@ main{
       }
 
       .top__title{
-        /* font-size: 35px; */
         margin-top: 150px;
-        /* line-height: 42px; */
       }
 
       main{
@@ -348,8 +302,6 @@ main{
       }
 
       .organisation__p{
-        /* margin-bottom: 40px; */
-        /* padding: 15px 0; */
         font-size: 16px;
         line-height: 30px;
       }

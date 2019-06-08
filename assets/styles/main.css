@@ -7,6 +7,7 @@
   --green : #16403e;
   --grey: #acb1ae;
   --yellow : #fffef8;
+  --white: #ffffff;
   --canelaRegular: 'Canela-regular';
   --canelaRegularItalic: 'Canela-RegularItalic';
   --canelaBold: 'Canela-bold';
@@ -21,6 +22,7 @@
 
 body{
   background-color: var(--yellow);
+  overflow-x: hidden;
 }
 
 main{

@@ -8,7 +8,7 @@
   height: 50px;
   width: 120px;
   padding: 10px 20px;
-  background-color: #16403e;
+  background-color: var(--green);
   text-align: center;
   transition: background-color .8s cubic-bezier(.77,0,.175,1), top .8s cubic-bezier(.77,0,.175,1), width .8s cubic-bezier(.77,0,.175,1);
   cursor: pointer;
@@ -16,7 +16,7 @@
 }
 
 .menu__button.active{
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .menu__button:hover{
@@ -24,8 +24,8 @@
 }
 
 .menu__button p{
-  color: #ffffff;
-  font-family: "CanelaBold";
+  color: var(--white);
+  font-family: var(--canelaRegular);
   font-size: 32px;
   transition: color .6s cubic-bezier(.12,1.13,.46,1);
   position: absolute;
@@ -35,7 +35,7 @@
 }
 
 .menu__button.active p{
-  color: #16403e;
+  color: var(--green);
 }
 
 .menu__button__close{
@@ -51,7 +51,7 @@
   top: -100vh;
   left: 0;
   transition: all .8s cubic-bezier(0,0,.5,1);
-  background-color: #16403e;
+  background-color: var(--green);
   z-index: 50;
   opacity: 1;
 }
@@ -93,7 +93,7 @@
   padding: 7.5vw;
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  color: var(--white);
   transition: all .8s cubic-bezier(0,0,.5,1);
   z-index: 75;
 }
@@ -107,20 +107,23 @@
 }
 
 .menu__nav__inner li span{
-  font-family: 'GT America', Sans-serif;
+  font-family: var(--GTAmericaRegular);
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .menu__nav__inner li p{
   align-self: flex-end;
-  font-family: 'GT America', Sans-serif;
+  font-family: var(--GTAmericaRegular);
 }
 
 .menu__nav__inner li a{
-  font-size: 175px;
+  font-size: 150px;
   text-decoration: none;
-  color: #16403e;
+  color: var(--green);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   position: relative;
+  font-family: var(--canelaBold);
 }
 
 .menu__nav__inner a:before {
@@ -129,14 +132,14 @@
   left: 0;
   width: 100%;
   height: 0;
-  color: #FFFFFF;
+  color: var(--white);
   overflow: hidden;
   content: attr(data-text);
   transition: all .8s cubic-bezier(0,0,.5,1);
 }
 
 .menu__nav__inner a:hover:before {
-  height: 100%;
+  height: 105%;
 }
 
 /* Image at background */
@@ -196,7 +199,7 @@
     top: -100vh;
     left: 0;
     transition: all .8s cubic-bezier(.77,0,.175,1);
-    background-color: #16403e;
+    background-color: var(--green);
     z-index: 50;
   }
 
@@ -219,7 +222,7 @@
   }
 
   .menu__nav__inner--mobile li{
-    color: #ffffff;
+    color: var(--white);
     list-style: none;
     text-align: center;
     transition: all .8s cubic-bezier(.77,0,.175,1);
@@ -227,8 +230,8 @@
 
   .menu__nav__inner--mobile li a{
     text-decoration: none;
-    color: #ffffff;
-    font-family: "CanelaRegular";
+    color: var(--white);
+    font-family: var(--canelaRegular);
     font-size: 65px;
     letter-spacing: 2px;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -237,7 +240,7 @@
   .menu__nav__inner--mobile li p{
     font-size: 18px;
     margin-top: 15px;
-    font-family: 'GT America', Sans-serif;
+    font-family: var(--GTAmericaRegular);
   }
 
   .menu__button{

@@ -21,13 +21,11 @@ body{
   line-height: 36px;
   text-align: left;
   color: var(--white);
-  /* padding: 0; */
 }
 
 .services__p, .plugins__p, .divide__p, .competitor__p{
   margin-bottom: 40px;
   text-align: left;
-  /* padding: 0; */
   color: var(--white);
 }
 
@@ -188,28 +186,6 @@ body{
 
   }
 
-  /*FOOTER*/
-
-/* Faire un footer pour la couleur blanche !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-  /* footer{
-    height: 75px;
-    overflow: hidden;
-    margin-top: -1px;
-    background-color: var(--green);
-  }
-
-  .link{
-    top: 25px;
-    font-size: 71px;
-    -webkit-text-stroke: 1px var(--white);
-    color: transparent;
-    transition: all 1s ease;
-  }
-
-  footer:hover .link{
-    top: 0px;
-  } */
 
   /*CURSOR*/
   * {
