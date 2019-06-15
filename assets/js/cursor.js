@@ -8,9 +8,13 @@ $(window).ready(function(){
   });
 
   $(".members__slider").hover(function(){
-    console.log('toto');
-    $(".cursor__green").toggleClass("active");
-    $(".drag").toggleClass("active");
+    $(".cursor__green").toggleClass("dragActive");
+    $(".drag").toggleClass("dragActive");
+  });
+
+  $("a").hover(function(){
+    $(".cursor__green").toggleClass("clickActive");
+    $(".click").toggleClass("clickActive");
   });
 
 })

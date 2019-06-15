@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   bottomLink.click(function(ev){
       ev.preventDefault();
-      var tl = new TimelineMax();
+      let tl = new TimelineMax();
       // bottomLink.css('-webkit-text-stroke', 'unset');
       tl.to(overlay, 0, {className:"-=foldUp"})
         .to(footer, 0, {'overflow': 'visible'})
