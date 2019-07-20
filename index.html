@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
 
     <!-- favicon  -->
     <link rel="icon" href="" type="image/png">
@@ -23,7 +25,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/revealClass.js"></script>
     <script src="assets/js/linkBottom.js"></script>
     <script src="assets/js/menuDesappear.js"></script>
     <script src="assets/js/overlay.js"></script>
@@ -95,7 +100,7 @@
       <section class="container-fluid">
             <section class="landing">
               <div class="landing__overlay col-12"></div>
-              <h1 class="landing__title col-12 col-md-6 offset-md-1">Découvrez <a href="https://teamtangible.com/" target="_blank">Team Tangible</a>, une agence créative à Sherbrooke</h1>
+              <h1 class="landing__title col-12 col-md-6 offset-md-1" data-splitting>Découvrez <a href="https://teamtangible.com/" target="_blank">Team Tangible</a>, une agence créative à Sherbrooke</h1>
 
               <div class="landing__summary col-11">
                   <div class="summary__link offset-1 offset-md-0 col-md-3">
@@ -128,20 +133,20 @@
             </section>
 
             <section class="presentation col-10 offset-1">
-              <p class="presentation__intro col-12 col-lg-6">Afin de conclure et de valider notre Licence Professionnelle Webdesign Sensoriel, nous avons réalisé un stage de 16 semaines au sein de l’agence créative Team Tangible, implantée à Sherbrooke au Québec.
+              <p class="presentation__intro col-12 col-lg-6 toto">Afin de conclure et de valider notre Licence Professionnelle Webdesign Sensoriel, nous avons réalisé un stage de 16 semaines au sein de l’agence créative Team Tangible, implantée à Sherbrooke au Québec.
               </p>
               <div class="col-lg-6">
-                <p class="presentation__p p__body col-lg-10 offset-lg-1">Créée en 2016, Tangible est le fruit de plusieurs années d’évolution, accompagnant le développement de son créateur : Gabriel Gallagher. Passionné par l’informatique et le domaine du web, il décide de quitter son cursus scolaire et de se lancer en tant que travailleur autonome spécialisé dans la configuration, l’assemblage et le montage d’ordinateurs.
+                <p class="presentation__p p__body col-lg-10 offset-lg-1">Créée en 2016, Tangible est le fruit de plusieurs années d’évolution, accompagnant l’évolution de son créateur : Gabriel Gallagher. Passionné par l’informatique et le domaine du web, il décide de quitter son cursus scolaire et de se lancer en tant que travailleur autonome spécialisé dans la configuration, l’assemblage et le montage d’ordinateurs.
                 </p>
-                <p class="presentation__p p__body col-lg-10 offset-lg-1">En 2012 à l’âge de ?? ans, il créé la société Surpass Web qui lui confère une première expérience entrepreneuriale et lui permet d’acquérir des connaissances à la fois dans la création et la gestion d’entreprise mais également dans le monde du web. Chez Surpass Web, Gabriel est enregistré en tant que freelance à son compte. Il décide donc en 2016 de créer Team Tangible, qui lui permet de passer vers une structure plus importante avec une équipe.</p>
-                <p class="presentation__p p__body col-lg-10 offset-lg-1">Son activité n’est pas très différente mais il est rejoint par plusieurs personnes, toutes ayant leurs spécificités et un rôle établi afin de réaliser des projets plus conséquents. Julia, sa compagne, qui arrête ses études d’art pour se consacrer à l’apprentissage de Wordpress en fait partie.</p>
+                <p class="presentation__p p__body col-lg-10 offset-lg-1">En 2012 à l’âge de 17 ans, il créé la société Surpass Web qui lui confère une première expérience entrepreneuriale et lui permet d’acquérir des connaissances à la fois dans la création et la gestion d’entreprise mais également dans le monde du web. Chez Surpass Web, Gabriel est enregistré en tant que freelance à son compte. Il décide donc en 2016 de créer Team Tangible, qui lui permet de passer vers une structure plus importante avec une équipe.</p>
+                <p class="presentation__p p__body col-lg-10 offset-lg-1">Son activité n’est pas très différente mais il est rejoint par plusieurs personnes, toutes ayant leurs spécificités et un rôle établi afin de réaliser des projets plus conséquents. Julia, sa compagne, arrête ses études d’art pour se consacrer à l’apprentissage de Wordpress et ainsi faire parti de Team Tangible.</p>
               </div>
 
             </section>
 
             <section class="members col-md-10 col-lg-8">
               <h2 class="members__title p__title col-10 col-lg-8 offset-1">Les membres</h2>
-              <p class="members__p p__body col-10 col-lg-8 offset-1">L’équipe actuelle est composée de 11 membres. Le parcours professionnel et personnel de Gabriel l’ont amené à favoriser les compétences et la motivation plutôt qu’un niveau d’étude ou un diplôme obtenu. L’ouverture d’esprit de cette entreprise est également traduite par son pluralisme culturel.</p>
+              <p class="members__p p__body col-10 col-lg-8 offset-1">L’équipe actuelle est composée de 11 membres. Le parcours professionnel et personnel de Gabriel l’a amené à favoriser les compétences et la motivation plutôt qu’un niveau d’étude ou un diplôme obtenu. L’ouverture d’esprit de cette entreprise se traduit également est également traduite par son pluralisme culturel.</p>
               <p class="members__p last__members__p p__body col-10 col-lg-8 offset-1">En effet, les employés sont répartis sur différents continents à travers le monde, ce qui permet d’une part d’avoir une entreprise active 24 heures sur 24 mais surtout d’avoir  une vision internationale sur les projets de l’entreprise.
               </p>
             </section>

@@ -12,6 +12,7 @@ $(document).ready(function(){
   const menuNavLink = $('.menu__nav__link');
   const menuBackground = $('.menu__background');
   const menuNavigation = $('.menu__navigation');
+  const cursorGreen = $('.cursor__green');
   let screenSize = $(document).width();
   let fullWidth = 0;
 
@@ -22,13 +23,20 @@ $(document).ready(function(){
       menu.toggleClass('open');
       menuButton.toggleClass('active');
       menuBackground.toggleClass('active');
+      cursorGreen.toggleClass('hide');
       if(menuButton.hasClass("active")){
         menuButtonOpen.fadeOut();
         menuButtonClose.fadeIn();
+        cursorGreen.css('display', 'none');
+        $('*').css('cursor', 'auto');
+        $('* a').css('cursor', 'pointer');
       }
       else{
         menuButtonClose.fadeOut();
         menuButtonOpen.fadeIn();
+        cursorGreen.css('display', 'block');
+        $('*').css('cursor', 'none');
+        $('* a').css('cursor', 'none');
       }
     })
 

@@ -6,15 +6,16 @@
 .top{
   background-color: var(--green);
   height: 70vh;
+  position: relative;
 }
 
 .top__title{
   position: absolute;
+  top: 300px;
   font-size: 35px;
   font-family: var(--canelaLight);
   color: var(--white);
   text-align: center;
-  margin-top: 200px;
   z-index: 1;
   line-height: 42px;
 }
@@ -163,7 +164,6 @@ main{
 
   @media screen and (min-width : 768px) {
     .top__title{
-      margin-top: 17vh;
       line-height: 60px;
     }
 
@@ -180,7 +180,7 @@ main{
   @media screen and (min-width : 992px) {
     .top__title{
       text-align: left;
-      margin-top: 9vh;
+      top: 275px;
     }
 
     main{
@@ -294,7 +294,7 @@ main{
       }
 
       .top__title{
-        margin-top: 150px;
+        top: 400px;
       }
 
       main{
