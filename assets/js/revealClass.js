@@ -38,7 +38,10 @@ $(document).ready(function(){
 
     // organisation page
     ScrollReveal().reveal('.organisation__p', { delay: 100, duration: 1000, origin:'right', distance:'50px'});
-    ScrollReveal().reveal('.card p', { delay: 100, duration: 1000, origin:'right', distance:'50px'});
+    if ($(window).width() >= 992) {
+      ScrollReveal().reveal('.card p', { delay: 100, duration: 1000, origin:'right', distance:'50px'});
+    }
+    ScrollReveal().reveal('.card .btn-link', { delay: 0, duration: 1000, origin:'right', distance:'50px'});
 
 
     // positionnement page

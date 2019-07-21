@@ -47,7 +47,7 @@ body{
 
 .plugins__image{
   height: 200px;
-  background-image: url('https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  background-image: url('../img/garou.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,10 +169,6 @@ body{
 
   .client div{
     padding: 0;
-  }
-
-  .client img{
-    max-height: 650px;
   }
 
   .competitor{

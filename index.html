@@ -34,6 +34,7 @@
     <script src="assets/js/overlay.js"></script>
     <script src="assets/js/menuSlide.js"></script>
     <script src="assets/js/summaryLink.js"></script>
+    <script src="assets/js/jquery.youtubebackground.js"></script>
 
   </head>
   <body>
@@ -91,15 +92,23 @@
       </section>
       <div class="menu__background">
         <div class="menu__background--content">
-          <img class="image-background-1" src="assets/img/image-1.jpg" alt="">
-          <img class="image-background-2" src="assets/img/image-2.jpg" alt="">
-          <img class="image-background-3" src="assets/img/image-3.jpg" alt="">
+          <img class="image-background-1" src="assets/img/chien.jpg" alt="morceau de fresque">
+          <img class="image-background-2" src="assets/img/fresque.jpg" alt="peintures rue Wellington">
+          <img class="image-background-3" src="assets/img/mairie.jpg" alt="route près du lac Magog">
         </div>
       </div>
 
       <section class="container-fluid">
             <section class="landing">
               <div class="landing__overlay col-12"></div>
+
+              <div class="container-fluid video__content">
+                <div id="video" class="vimeo-wrapper"></div>
+                <div class="img__responsive">
+                  <img src="assets/img/video_bg.jpg" alt="Objectifs de la licence pro">
+                </div>
+              </div>
+
               <h1 class="landing__title col-12 col-md-6 offset-md-1" data-splitting>Découvrez <a href="https://teamtangible.com/" target="_blank">Team Tangible</a>, une agence créative à Sherbrooke</h1>
 
               <div class="landing__summary col-11">
@@ -217,5 +226,27 @@
 
 
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      $('#video').YTPlayer({
+        fitToBackground: true,
+        videoId: '06pdFoJBujo'
+      });
+
+      $('#video').YTPlayer({
+        fitToBackground: true,
+        videoId: '06pdFoJBujo',
+        playerVars: {
+          modestbranding: 0,
+          autoplay: 1,
+          controls: 0,
+          showinfo: 0,
+          branding: 0,
+          rel: 0,
+          autohide: 0,
+          start: 0,
+          showControls: false
+        }
+    });
+    </script>
   </body>
   </html>

@@ -5,10 +5,6 @@
 
 .landing{
   height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 
@@ -17,6 +13,47 @@
   opacity: 0.7;
   height: 100vh;
   position: absolute;
+}
+
+/*video*/
+.vimeo-wrapper {
+  display: none;
+}
+
+#video{
+ position: absolute;
+ background: transparent;
+ height: 100vh;
+ width: 100vw;
+ z-index: -1;
+}
+
+.ytplayer-container{
+	z-index: -2;
+}
+
+.img__responsive {
+	display: none;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.img__responsive img {
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.video__content {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	overflow: hidden;
+  margin-left: -10px;
 }
 
 .landing__title{
@@ -257,6 +294,9 @@
 
 @media screen and (min-width : 992px) {
   /*SECTION PRESENTATION*/
+  .vimeo-wrapper {
+    display: inherit;
+  }
 
   .presentation{
     display: flex;
