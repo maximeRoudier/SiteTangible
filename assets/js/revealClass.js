@@ -10,12 +10,22 @@ $(document).ready(function(){
 
     window.sr = ScrollReveal({ reset: false });
 
-    sr.reveal('.char', {
+    sr.reveal('.organisation__card .word .char', {
       origin: 'right',
       distance : '30px',
       duration: 600,
       interval : 2,
-      easing : 'ease'
+      easing : 'ease',
+      delay: 100
+    });
+
+    sr.reveal('.organisation__intro .word .char', {
+      origin: 'right',
+      distance : '30px',
+      duration: 600,
+      interval : 2,
+      easing : 'ease',
+      delay: 100
     });
 
     sr.reveal('.positionnement .char', {
@@ -37,11 +47,12 @@ $(document).ready(function(){
     ScrollReveal().reveal('.slider', { delay: 100, duration: 1500, origin:'right', distance:'50px'});
 
     // organisation page
+    // ScrollReveal().reveal('.organisation__card .word', { delay: 100, duration: 1000, origin:'right', distance:'50px'});
     ScrollReveal().reveal('.organisation__p', { delay: 100, duration: 1000, origin:'right', distance:'50px'});
+    // ScrollReveal().reveal('.organisation__intro', { delay: 100, duration: 1000, origin:'right', distance:'50px'});
     if ($(window).width() >= 992) {
       ScrollReveal().reveal('.card p', { delay: 100, duration: 1000, origin:'right', distance:'50px'});
     }
-    ScrollReveal().reveal('.card .btn-link', { delay: 0, duration: 1000, origin:'right', distance:'50px'});
 
 
     // positionnement page
