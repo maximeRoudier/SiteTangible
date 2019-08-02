@@ -58,6 +58,7 @@
 
 .menu.open{
   top: 0;
+  transition: all .8s cubic-bezier(0,0,.5,1);
 }
 
 .menu.linkHovered{
@@ -165,17 +166,33 @@
   overflow: hidden;
 }
 
-.menu__background img{
-  opacity: 0;
+.menu__background--content::after{
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: opacity .8s cubic-bezier(0,0,.5,1);
+  height: 100%;
+  width: 100%;
+  background-color: var(--green);
+  opacity: 1;
+  z-index: 31;
+  transition: opacity 5s cubic-bezier(0,0,.5,1);
+}
+
+.menu__background img{
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  transition: opacity 5s cubic-bezier(0,0,.5,1);
 }
 
 .menu__background img.visible{
-  opacity: 1;
+  z-index: 32;
+  transition: opacity 5s cubic-bezier(0,0,.5,1);
 }
 
 .menu--mobile{
